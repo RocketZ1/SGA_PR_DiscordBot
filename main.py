@@ -42,5 +42,8 @@ async def set_rso(ctx, rso_id: int):
         await ctx.send("RSO ID not found, please try again!")
 
 
+tokenFile = open("token.txt", "r")
+token = tokenFile.read()
+
 # FL Polytechnic SGA PR Bot token
-bot.run('MTIxMjI3Njc1MjYyMjE1Nzg3OA.Gya71N.chuXI74C0i_RDJFvDesR4vafPwQggbkfhXOoAE')
+bot.run(token)
